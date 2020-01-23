@@ -1,0 +1,59 @@
+<%- include('header'); -%>
+<html>
+<title>Project</title>
+<script>
+        function myFunction() {
+      alert("Product Added Successfully");
+        }
+        </script>
+<style>
+    
+    a.button:link, a.button:visited {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.button:hover, a.button:active {
+  background-color:grey;
+}
+    body{
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+div{
+    position:absolute;
+    left:540px;
+    top:80px;
+    font-size:35px;
+}
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 20px;
+}
+</style>
+<body>
+    <div>
+    <form method="post" action="/addpro">
+       Product Name:<br>
+        <input type="text" placeholder="Name here" name="name" style="height:30px;width:240px;"><br><br>
+        Enter Description:<br>
+        <input type="text" placeholder="description here" name="description" style="height:30px;width:240px;"><br><br>
+        Enter Price:<br>
+        <input type="text" placeholder="price here" name="price" style="height:30px;width:240px;"><br><br>
+        Enter Quantity:<br>
+        <input type="text" placeholder="Quantity here" name="quantity" style="height:30px;width:240px;"><br><br>
+    <button type="submit" onclick="myFunction()" class="button">Submit</button>
+      
+        
+    </form>
+    </div>
+    <a href="login.html"  style="color:white;font-size:25px;position:absolute;top:7px;left:1210px;"class="button">Logout</a>
+</body>
+</html>
